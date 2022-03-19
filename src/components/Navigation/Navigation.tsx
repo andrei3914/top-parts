@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { RiShoppingCartLine } from 'react-icons/ri'
 
 const Navigation = () => {
+
   return (
     <div className='navigation'>
         <p className='navTitle'>

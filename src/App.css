@@ -2,6 +2,7 @@
 :root {
   --navFooterBg: #f87171;
   --bodyBg: #bfdbfe;
+  --shopMenuBg: #dbeafe;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
@@ -66,36 +67,126 @@ html, body {
 }
 
 .carWheelDiv {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
 }
 
-.carWheel1, .carWheel2 {
-  width: 12%;
-  height: 12%;
+.carWheelDiv > img {
+  width: 50%;
+  height: 50%;
 }
 
-.carBody {
-  position: relative;
-  
-  z-index: 0;
+/*##########################################################
+  SHOP BODY
+*/
+
+.shopBody {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.carWheel1 {
-  position: absolute;
-  bottom: 195px;
-  left: 77px;
+.shopMenu {
+  background-color: var(--shopMenuBg);
+
+  min-height: 85vh;
+  width: 25vw;
+
+  display: flex;
+  justify-content: center;
 }
 
-.carWheel2 {
-  position: absolute;
-  right: 87px;
-  bottom: 195px;
+ul {
+  margin: 0;
+  padding: 100px 20px;
+
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-@media (max-width: 510px) {
-  .appBody {
-    display: none;
-  }
+li {
+  cursor: pointer;
+}
+
+.productCard {
+  margin: 0;
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 10px;
+
+  background-color: var(--shopMenuBg);
+}
+
+.productCard:hover {
+  box-shadow: 5px 5px grey;
+  cursor: pointer;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 50%;
+}
+
+.imgContainer > img {
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 0;
+}
+
+.products {
+  min-height: 85vh;
+  width: 75vw;
+  margin-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+button {
+  cursor: pointer;
+
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--navFooterBg);
+  color: white;
+
+  border: 1px solid white;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.8);
+}
+
+/*##########################################################
+  CART DIV
+*/
+
+.cartDiv {
+  height: 100vh;
+  width: 15vh;
+  z-index: 3;
 }
 
 /*##########################################################
