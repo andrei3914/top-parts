@@ -2,7 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { RiShoppingCartLine } from 'react-icons/ri'
 
-const Navigation = () => {
+type Props = {
+  setShowCart: React.Dispatch<React.SetStateAction<string>>
+}
+
+const Navigation: React.FC<Props> = ({ setShowCart }) => {
 
   return (
     <div className='navigation'>
@@ -13,7 +17,7 @@ const Navigation = () => {
             <p>
                 <Link to='/shop' className='link'>Shop!</Link>
             </p>
-            <RiShoppingCartLine />
+            <RiShoppingCartLine className='cartIcon' onClick={() => setShowCart('block')}/>
         </div>
     </div>
   )

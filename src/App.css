@@ -184,9 +184,42 @@ button:active {
 */
 
 .cartDiv {
-  height: 100vh;
-  width: 15vh;
+  min-height: 100%;
+  width: 35vw;
   z-index: 3;
+  padding: 20px;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  background-color: var(--shopMenuBg);
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -5px -5px 4px lightgrey;
+}
+
+.cartButtons {
+  justify-content: flex-end;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cartIcon {
+  cursor: pointer;
+}
+
+.cartItemDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItemButtons {
+  display: flex;
 }
 
 /*##########################################################
@@ -198,6 +231,7 @@ button:active {
   min-height: 5vh;
   bottom: 0;
   position: fixed;
+  z-index: 4;
 
   background-color: var(--navFooterBg);
 
