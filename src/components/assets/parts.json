@@ -5,7 +5,7 @@
         "clicked": false,
         "name": "PT 8884 Turbocharger",
         "category": "turbo",
-        "price": "1845,22 €",
+        "price": "1845.22",
         "image": "https://www.turbozentrum.de/media/image/product/145989/lg/pt-8884-turbocharger.jpg"
     },
     {
@@ -14,7 +14,7 @@
         "clicked": false,
         "name": "PT 6766 Turbocharger",
         "category": "turbo",
-        "price": "1172,31 €",
+        "price": "1172.31",
         "image": "https://www.turbozentrum.de/media/image/product/145964/lg/pt-6766-turbocharger.jpg"
     },
     {
@@ -23,7 +23,7 @@
         "clicked": false,
         "name": "PT 7270 Turbocharger",
         "category": "turbo",
-        "price": "2579,79 €",
+        "price": "2579.79",
         "image": "https://www.turbozentrum.de/media/image/product/145970/lg/pt-7270-turbocharger.jpg"
     },
     {
@@ -32,7 +32,7 @@
         "clicked": false,
         "name": "NGK sparkplug PFR7AB",
         "category": "spark",
-        "price": "29,72 €",
+        "price": "29.72",
         "image": "https://www.progearmoto.com/media/catalog/product/cache/68805b569b9959ab91e833a3a9cd7df5/d/6/d6b42466b5ea12e6bf955de8a68b0ac7c850778e45affbe344a64e64c10c651d.jpeg"
     },
     {
@@ -41,7 +41,7 @@
         "clicked": false,
         "name": "NGK C Series 6689 Spark Plug",
         "category": "spark",
-        "price": "21,99 €",
+        "price": "21.99",
         "image": "https://www.waveinn.com/f/13683/136834505/ngk-c-series-6689-spark-plug-10-pcs.jpg"
     },
     {
@@ -50,7 +50,7 @@
         "clicked": false,
         "name": "SHZOND Single Rear GT Wing 43.3inch",
         "category": "spoiler",
-        "price": "364,78 €",
+        "price": "364.78",
         "image": "https://www.ubuy.vn/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFGSWNDM01ua0wuX0FDX1NMMTUwMF8uanBn.jpg"
     },
     {
@@ -59,7 +59,7 @@
         "clicked": false,
         "name": "BestEquip Single Rear GT Wing Lightweight Aluminum 43.3inch",
         "category": "spoiler",
-        "price": "399,99 €",
+        "price": "399.99",
         "image": "https://m.media-amazon.com/images/I/61fiVlQbptL._AC_SY355_.jpg"
     },
     {
@@ -68,7 +68,7 @@
         "clicked": false,
         "name": "R3 Wheels R3H03 anthracite-matt",
         "category": "wheels",
-        "price": "686,83 €",
+        "price": "686.83",
         "image": "https://www.felgenoutlet.com/felgenbilder/6416_27/popup/r3_wheels_r3h03_anthracite-matt.jpg?1606995987"
     },
     {
@@ -77,7 +77,7 @@
         "clicked": false,
         "name": "Variant Radon Satin Bronze",
         "category": "wheels",
-        "price": "600 €",
+        "price": "600",
         "image": "https://variantwheels.com/wp-content/uploads/2020/09/VARIANTWheels_Radon_20x11_SatinBronze_STD-low-3000px-scaled.jpg"
     },
     {
@@ -86,7 +86,7 @@
         "clicked": false,
         "name": "Z-Performance ZP7.1 FlowForged Gloss Metal",
         "category": "wheels",
-        "price": "1560 €",
+        "price": "1560",
         "image": "https://se.wheeloutlet.com/felgenbilder/15703_6/seo/z-performance_zp7-1_flowforged_gloss_metal.jpg?1606996555"
     }
 ]

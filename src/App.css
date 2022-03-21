@@ -247,3 +247,25 @@ button:active {
   width: 32px;
   height: 32px;
 }
+
+@media (max-width: 440px) {
+  .shopBody {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .shopMenu {
+    width: 100%;
+    min-height: 5vh;
+  }
+
+  ul {
+    padding: 5px;
+    margin: 10px;
+  }
+
+  .cartDiv {
+    width: 70vw;
+  }
+}

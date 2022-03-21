@@ -10,7 +10,9 @@ const Shop = () => {
   const [parts, setParts] = useState(Parts);
   const [showCart, setShowCart] = useState('none');
   const [Clicked, setClicked] = useState(false);
+  const [total, setTotal] = useState(0.00);
 
+  //SHOP ROUTING ON CATEGORIES
   const handleSpecific = (category: string) => {
     return parts.map(part => {
       if (category === 'all') {
@@ -38,11 +40,36 @@ const Shop = () => {
     })
   }
 
+  //ADD PRODUCT TO CART
   const handleAddToCart = (id: number) => {
-    parts.map(part => {
+    parts.forEach(part => {
       if(id === part.id && part.clicked === false) {
         part.clicked = true;
         setClicked(true);
+        setTotal(total + parseFloat(part.price) * part.quantity);
+      }
+    })
+  }
+
+  //FINE TUNING PRODUCT QUANTITY IN CART 
+  const handleIncrement = (id: number) => {
+    parts.forEach(part => {
+      if(id === part.id && part.clicked === true) {
+        part.quantity += 1;
+        setTotal(total + parseFloat(part.price));
+      }
+    })
+  }
+
+  const handleDecrement = (id: number) => {
+    parts.forEach(part => {
+      if(id === part.id && part.clicked === true) {
+        part.quantity -= 1;
+        setTotal(total - parseFloat(part.price));
+        if (part.quantity === 0) {
+          setClicked(false);
+          part.clicked = false;
+        }
       }
     })
   }
@@ -72,13 +99,19 @@ const Shop = () => {
                     if (part.clicked === true)
                     {
                       return (
-                      <CartItem name={part.name} quantity={part.quantity}/>
+                      <CartItem 
+                        key={part.id} 
+                        name={part.name} 
+                        quantity={part.quantity}
+                        handleIncrement={handleIncrement}
+                        handleDecrement={handleDecrement}
+                        id={part.id}/>
                     )}
                   })
                 }
               </div>
               <div className="cartButtons">
-                <p>{'Total: ' + 0 + ' €'}</p>
+                <p>{'Total: ' + total + ' €'}</p>
                 <button>CHECKOUT</button>
                 <button onClick={() => setShowCart('none')}>CLOSE</button>
               </div>
