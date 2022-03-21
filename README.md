@@ -1,4 +1,3 @@
 # shopping cart app in React with Typescript
 
-engine icon from https://www.freepik.com/
-car wheel icon from https://www.flaticon.com/authors/those-icons
+available at: https://andrei3914.github.io/top-parts/
